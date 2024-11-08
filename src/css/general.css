@@ -1,0 +1,201 @@
+/*FONTS*/
+@font-face {
+  font-family: "Roboto black", sans-serif;
+  src: url("../fonts/Roboto-Black.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Roboto bold", sans-serif;
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto medi", sans-serif;
+  src: url("../fontss/Roboto-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: "Roboto norm", sans-serif;
+  src: url("../fonts/Roboto-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto thin", sans-serif;
+  src: url("../fonts/Roboto-Thin.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+
+/*GENERAL*/
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15% 0 15%;
+    background-image: url("../img/main.jpeg");
+    background-color: #C97400;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/*HEADER GENERAL*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 39px;
+    padding: 14px;
+}
+
+.header__logo_link {
+    color: #FFFFFF;
+}
+
+.header__logo {
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.header__logo_text {
+    font-weight: 100;
+}
+
+/*BUTTON GENERAL*/
+.button {
+    color: #FFFFFF;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 3px 0px rgba(0, 0, 0, 0.24);
+    background-color: #16A6AF;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.12), 0px 3px 3px 0px rgba(255, 255, 255, 0.24);
+}
+
+.button:focus-visible {
+    outline: #757575 auto 1px;
+}
+
+/*NAV GENERAL*/
+.nav {
+    position: sticky;
+}
+
+.nav__days {
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    list-style: none;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.nav__day {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    min-height: 48px;
+    padding: 10px;
+    margin-top: 1px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.nav__day:hover {
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+}
+
+.nav__day_today {
+    display: block;
+    min-width: 66px;
+}
+
+.nav__day_weekend {
+    color: #DE2121;
+}
+
+.nav__day-checked {
+    min-height: 52px;
+    padding: 11px;
+    margin-top: 0;
+    min-width: 75px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+.nav__arrow {
+    align-items: center;
+    font-family: Consolas;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}

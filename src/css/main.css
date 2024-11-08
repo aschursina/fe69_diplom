@@ -1,0 +1,114 @@
+.film {
+    width: 100%;
+    background: rgba(241, 235, 230, 0.95);
+     padding: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .film:last-child {
+    margin-bottom: 0;
+  }
+  
+  .film__info {
+    display: flex;
+  }
+  
+  .film__poster {
+    width: 125px;
+    height: 175px;
+    position: relative;
+  }
+  
+  .film__poster::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 6px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    right: -7px;
+    border-top: 14.4px solid #772720;
+    border-left: 6.4px solid #772720;
+  }
+  
+  .film__poster_image {
+    width: 125px;
+    height: 175px;
+    object-fit: cover;
+  }
+  
+  .film__description {
+    padding-left: 15px;
+  }
+  
+  .film__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 11px;
+  }
+  
+  .film__decription {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 11px;
+  }
+  
+  .film__data {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.38px;
+  }
+  
+  .film__data-duration .film__data-country {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  
+  .hall__name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 7px;
+  }
+  
+  .time__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    list-style: none;
+  }
+  
+  .time__list:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  
+  .time__item {
+    display: flex;
+    width: 53px;
+    height: 33px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+  }
+  
+  .time__item:hover {
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+  }
+  
+  .time__item_disabled {
+    background-color: #C4C4C4;
+    cursor: default;
+  }
+

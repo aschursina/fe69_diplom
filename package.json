@@ -1,0 +1,11 @@
+{
+  "name": "fe_finaldiploma",
+  "version": "1.0.0",
+  "description": "___  \r **Цель работы:**  \r создать сайт бронирования билетов онлайн с административной частью.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

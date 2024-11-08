@@ -1,0 +1,173 @@
+/*HALL*/
+.buying {
+  width: 100%;
+  background: rgba(241, 235, 230, 0.95);
+  padding-bottom: 30px;
+}
+
+.buying__info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buying__info_movie {
+  min-width: 260px;
+}
+
+.buying__info_title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 9px;
+}
+
+.buying__info_start,
+.buying__info_time {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  margin-bottom: 7px;
+}
+
+.buying__info_hall {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+
+/*HALL SCHEME*/
+.buying__scheme {
+  background: #171D24;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buying__scheme_wrapper {
+  font-size: 0;
+  max-width: 284px;
+  padding-top: 30px;
+  background-image: url("../img/screen.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buying__scheme_row {
+  display: flex;
+  gap: 4px;
+}
+
+.buying__scheme_row:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.buying__scheme_chair,
+.buying__scheme_free-chair {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.buying__scheme_chair:not(.no-chair, .chair_occupied):hover {
+  box-shadow: 0px 0px 4px #ffffff;
+}
+
+.chair_standart {
+  background-color: #FFFFFF;
+  border: 1px #525252 solid;
+  cursor: pointer;
+}
+
+.chair_vip {
+  background-color: #F9953A;
+  border: 1px #525252 solid;
+  cursor: pointer;
+}
+
+.chair_occupied {
+  border: 1px #525252 solid;
+}
+
+.chair_selected {
+  transform: scale(1.2);
+  background-color: #25C4CE;
+  border: 1px #525252 solid;
+  box-shadow: 0px 0px 4px #16A6AF;
+  cursor: pointer;
+}
+
+.buying__scheme_free {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buying__scheme_prices {
+  padding-right: 33px;
+}
+
+.buying__scheme_free-text {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.buying__scheme_free-text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.buying__scheme_free-chair {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default;
+}
+
+.btn__buy {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 57px;
+  min-height: 40px;
+}
+
+.buying__info_hint {
+  display: none;
+}
+
+/*HINT*/
+@media (max-width: 768px) {
+  .buying__info_hint {
+    width: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+  }
+
+  .buying__info_hint-image {
+    width: 24px;
+    position: absolute;
+    left: -10px;
+    top: 17px;
+  }
+
+  .buying__info_hint-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+  }
+}
