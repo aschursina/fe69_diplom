@@ -1,7 +1,7 @@
 .film {
     width: 100%;
-    background: rgba(241, 235, 230, 0.95);
-     padding: 15px;
+    background: var(--back-color);
+    padding: 15px;
     margin-bottom: 30px;
   }
   
@@ -99,12 +99,12 @@
     align-items: center;
     border-radius: 2px;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: var(--btn-shadow);
     cursor: pointer;
   }
   
   .time__item:hover {
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: var(--btn-shadow);
   }
   
   .time__item_disabled {

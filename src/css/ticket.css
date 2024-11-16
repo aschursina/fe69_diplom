@@ -1,7 +1,7 @@
 /*MAIN*/
 .ticket__info-wrapper {
     width: 100%;
-    background: rgba(241, 235, 230, 0.95);
+    background: var(--back-color);
     padding: 19px 30px 15px;
     margin-top: 4px;
     position: relative;

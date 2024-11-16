@@ -44,6 +44,14 @@
 
 
 /*GENERAL*/
+:root {
+    --btn-shadow: 0px 0px 3px 0px #0000001F, 0px 3px 3px 0px #0000003D;
+    --btn-color: #16A6AF;
+    --btn-padding: 11.2px 32px 11.9px 32px;
+    --tittle-color-text: #fff;
+    --back-color: rgba(241, 235, 230, 0.95);
+  }
+
 * {
     box-sizing: border-box;
 }
@@ -93,14 +101,14 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    color: #FFFFFF;
+    color: var(--tittle-color-text);
     text-transform: uppercase;
     line-height: 39px;
     padding: 14px;
 }
 
 .header__logo_link {
-    color: #FFFFFF;
+    color: var(--tittle-color-text);
 }
 
 .header__logo {
@@ -114,21 +122,21 @@ body {
 
 /*BUTTON GENERAL*/
 .button {
-    color: #FFFFFF;
+    color: var(--tittle-color-text);
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 3px 0px rgba(0, 0, 0, 0.24);
-    background-color: #16A6AF;
+    box-shadow: var(--btn-shadow);
+    background-color: var(--btn-color);
     padding: 12px;
     cursor: pointer;
 }
 
 .button:hover {
-    box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.12), 0px 3px 3px 0px rgba(255, 255, 255, 0.24);
+    box-shadow: var(--btn-shadow);
 }
 
 .button:focus-visible {
@@ -165,12 +173,12 @@ body {
     line-height: 14px;
     border-radius: 2px;
     background: rgba(255, 255, 255, 0.90);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: var(--btn-shadow);
     cursor: pointer;
 }
 
 .nav__day:hover {
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: var(--btn-shadow);
 }
 
 .nav__day_today {

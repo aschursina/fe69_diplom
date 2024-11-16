@@ -43,7 +43,7 @@
   }
   
   .login__main_header-text {
-    color: #FFFFFF;
+    color: var(--tittle-color-text);
     font-size: 22px;
     line-height: 25px;
     font-weight: 700;
@@ -57,7 +57,7 @@
   }
   
   .login__form {
-    background-color: #EAE9EB;
+    background-color: #eae9eb;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;

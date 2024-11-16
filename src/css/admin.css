@@ -31,7 +31,7 @@
 }
 
 .admin__section {
-  background-color: rgba(234, 233, 235, 0.95);
+  background-color: var(--back-color);
 }
 
 .admin__header {
@@ -54,7 +54,7 @@
 }
 
 .admin__header_text {
-  color: #FFFFFF;
+  color: var(--tittle-color-text);
   font-size: 22px; 
   font-weight: 700; 
   line-height: 25px;
@@ -129,7 +129,7 @@
   height: 20px;
   border-radius: 3px;
   background-color: #FFFFFF;
-  box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 12%), 0px 3px 3px 0px rgb(0 0 0 / 24%);
+  box-shadow: var(--btn-shadow);
   cursor: pointer;
   position: relative;
 }
@@ -330,7 +330,7 @@
 }
 
 .button_disabled:hover {
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 3px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: var(--btn-shadow);
 }
 
 /*SETTING PRICE*/
@@ -582,7 +582,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: rgba(234, 233, 235, 0.95);
+  background-color: var(--back-color);
   padding-bottom: 35px;
 }
 
