@@ -1,4 +1,3 @@
-'use strict'
 const popup = Array.from(document.querySelectorAll(".popup"));
 const popupForms = Array.from(document.querySelectorAll(".popup__form"));
 const closeForm = Array.from(document.querySelectorAll(".popup__close"));

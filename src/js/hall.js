@@ -41,7 +41,9 @@ function showHallScheme(data) {
     hallConfig.forEach(() => {
         scheme.insertAdjacentHTML("beforeend", `<div class="buying__scheme_row"></div>`);
     });
+    
     hallSchemeRows = document.querySelectorAll(".buying__scheme_row");
+    
     for (let i = 0; i < hallSchemeRows.length; i++) {
         for (let j = 0; j < hallConfig[i].length; j++) {
             hallSchemeRows[i].insertAdjacentHTML("beforeend", `<span class="buying__scheme_chair" data-type="${hallConfig[i][j]}"></span>`);
