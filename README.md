@@ -5,8 +5,8 @@ ___
 
 **Результат работы:**  
 Главная страница: 
-ЛК Администратора:  
-* нажать на кноаку "Войти" на главной странице https://aschursina.github.io/fe69_diplom/src/index.html
+ЛК Администратора:  https://aschursina.github.io/fe69_diplom/
+* нажать на кноаку "Войти" на главной странице https://aschursina.github.io/fe69_diplom/
 * перейти по ссылке https://aschursina.github.io/fe69_diplom/src/login.html 
 
 Логин: shfe-diplom@netology.ru 
