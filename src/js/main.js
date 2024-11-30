@@ -5,7 +5,7 @@ const btnLogin = document.querySelector(".btnLogin");
 
 btnLogin.addEventListener("click", (e) => {
     e.preventDefault();
-    document.location = "./login.html"
+    document.location = "./src/login.html"
 })
 
 //DATE
@@ -330,7 +330,7 @@ function clickSeance() {
             seance.addEventListener("click", () => {
                 seanceId = seance.dataset.seanceid;
                 localStorage.setItem("seanceId", seanceId);
-                document.location = "./hall.html";
+                document.location = "./src/hall.html";
             })
         }
     })

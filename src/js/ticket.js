@@ -6,6 +6,7 @@ const filmInfo = document.querySelector(".ticket__info-film");
 const placesInfo = document.querySelector(".ticket__info-places");
 const hallInfo = document.querySelector(".ticket__info-hall");
 const timeInfo = document.querySelector(".ticket__info-time");
+const priceInfo = document.querySelector(".ticket__info-price");
 const ticketQr = document.querySelector(".ticket__info-qr");
 
 let infoQr;
