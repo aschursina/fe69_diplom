@@ -4,9 +4,9 @@ ___
 создать сайт бронирования билетов онлайн с административной частью.  
 
 **Результат работы:**  
-Главная страница: 
-ЛК Администратора:  https://aschursina.github.io/fe69_diplom/
-* нажать на кноаку "Войти" на главной странице https://aschursina.github.io/fe69_diplom/
+Главная страница: https://aschursina.github.io/fe69_diplom/
+ЛК Администратора:  
+* нажать на кнопку "Войти" на главной странице https://aschursina.github.io/fe69_diplom/
 * перейти по ссылке https://aschursina.github.io/fe69_diplom/src/login.html 
 
 Логин: shfe-diplom@netology.ru 
