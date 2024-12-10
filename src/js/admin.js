@@ -6,23 +6,23 @@ const hideBlock = document.querySelectorAll(".admin__header_arrow");
 
 //POPUP
 //close
-popup.forEach(form => {
+popup.forEach(popup => {
   closeForm.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      form.classList.add('hidden');
+    item.addEventListener('click', () => {
+      popup.classList.add('popup__hidden');
     })
   })
-});
+
 
 //cancel
 popupForms.forEach(form => {
   cancelBtn.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      form.classList.add('hidden');
+    item.addEventListener('click', () => {
+      form.reset();
+      popup.classList.add('popup__hidden');
     })
   })
+});
 });
 
 //hide
@@ -624,6 +624,7 @@ function hallsOperations(data) {
 
   hallRemoveButton.forEach(item => {
     item.addEventListener("click", (e) => {
+      e.preventDefault();
       let hallId = e.target.previousElementSibling.dataset.id;
       deleteHall(hallId);
     })
@@ -1199,7 +1200,8 @@ function seancesOperations(data) {
 // SAVE SEANCES
 movieSeancesSave = document.querySelector(".movie-seances__batton_save");
 
-movieSeancesSave.addEventListener("click", event => {
+movieSeancesSave.addEventListener("click", (e) => {
+  e.preventDefault();
   if (movieSeancesSave.classList.contains("button_disabled")) {
     event.preventDefault();
   } else {
